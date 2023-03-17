@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    --fontbasique: 'Luckiest Guy', cursive;
+    --color1: #27032d;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/fond.png);
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    width: 750px;
+    background-color: var(--color1);
+}
