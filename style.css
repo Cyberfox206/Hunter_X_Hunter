@@ -1,21 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     --fontbasique: 'Luckiest Guy', cursive;
     --color1: #27032d;
+    --fonttext: 'Roboto', sans-serif;
+}
+
+#firsttitre {
+    display: none;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 98vw;
+    height: 98vh;
     background-image: url(img/fond.png);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 nav {
     width: 750px;
+    height: 135px;
     background-color: var(--color1);
+    display: flex;
+    align-items: center;
+}
+
+#navul {
+    list-style: none;
+    margin-left: 120px;
+}
+
+.navli {
+    display: inline;
+    font-family: var(--fontbasique);
+    color: white;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.imgunter {
+    float: left;
+    width: 200px;
+}
+
+#unterlogo {
+    width: 180px;
+    margin: 30px;
+}
+
+main {
+    width: 750px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titrearticle {
+    font-family: var(--fontbasique);
+    color: var(--color1);
+    margin: 20px;
+}
+
+.titrearticle::before {}
+
+.textarticle {
+    font-family: var(--fonttext);
+    margin-bottom: 10px;
+}
+
+.btnredmore {
+    transform: translate(550px, 0px);
+    background-color: var(--color1);
+    font-family: var(--fonttext);
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.articunter {
+    width: 90%;
+}
+
+#listarticle {
+    margin-left: 50px;
+    margin-top: 20px;
+    font-family: var(--fonttext);
+}
+
+footer {
+    width: 750px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#edenschoologo {
+    width: 64px;
+    margin-top: 15px;
 }
